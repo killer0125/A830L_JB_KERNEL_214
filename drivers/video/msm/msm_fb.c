@@ -691,9 +691,9 @@ static int msm_fb_probe(struct platform_device *pdev)
         else
 #endif
 #if defined (CONFIG_MACH_MSM8960_EF45K) || defined (CONFIG_MACH_MSM8960_EF47S) ||defined (CONFIG_MACH_MSM8960_EF46L)
-         mfd->bl_level = 4; 
-#else
          mfd->bl_level = 10; 
+#else
+         mfd->bl_level = 0; 
 	//mfd->bl_level = 0;
 #endif
 	bl_scale = 1024;
